@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>test</title>
+    <title> Main </title>
+    <style>
+        h1 {
+            font: bold 20px/2 Sans-serif;
+            background-color: #222;
+            color: white;
+            display: inline-block;
+            padding: 0 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .pic {
+            text-align: center;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .pic-img {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        .pic:Hover {
+            background: rgb(240, 239, 239);
+        }
+
+        .pic:active {
+            background-color: rgb(213, 247, 247);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>test</h1>
+    <a href="/"><h1>Picture Gallery</h1></a>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); margin-bottom: 40px">
+        <div class="pic">
+            <img class="pic-img" src="./img/1.jpg">
+            <p class="title"> 별이 빛나는 밤 </p>
+            <p>빈센트 반 고흐</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/2.jpg">
+            <p class="title"> 모나리자 </p>
+            <p>레오나르도 다 빈치</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/3.jpg">
+            <p class="title"> 최후의 만찬 </p>
+            <p>레오나르도 다 빈치</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/4.jpg">
+            <p class="title"> 이삭 줍는 여인들 </p>
+            <p>밀레</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/5.jpg">
+            <p class="title"> 미인도 </p>
+            <p>신윤복</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/6.jpg">
+            <p class="title"> 우는 여인 </p>
+            <p>파블로 피카소</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/7.jpg">
+            <p class="title"> 그랑자트섬의 일요일 오후 </p>
+            <p>조르주 쇠라</p>
+        </div>
+        <div class="pic">
+            <img class="pic-img" src="./img/8.jpg">
+            <p class="title"> 진주귀걸이를 한 소녀 </p>
+            <p>요하네스 베르메르</p>
+        </div>
+    </div>
 </body>
 </html>
